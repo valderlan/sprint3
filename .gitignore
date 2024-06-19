@@ -1,0 +1,12 @@
+# Ignore log files and directories
+downloaded_emails/
+tokens/
+chroma_db/
+*.json
+# Ignore Python compiled files
+__pycache__/
+*.pyc
+
+# Ignore virtual environments for Python
+venv/
+.env/
