@@ -5,11 +5,16 @@
 ![Badge](https://img.shields.io/badge/Lingugem_-Python-blue)
 
 ## Informaçãoes Gerais:
-Banco de dados utilizado é o ChromaDB
+Estudo focado em executar localmente uma LLM para conseguir obter informações de arquivos de emails baixado em uma pasta local.
 
-A LLM usada foi é Ollama com os modelos phi3 (3B), llama2 (7B) e llama3 (8B).
-- com o modelo phi3 os resultados obtidos foram bastantes insatisfatórios,
-- llama2 e llama3 tiver resultados melhores e semelhantes.
+### Tecnologias utilizadas:
+- LangChain
+
+- Banco de dados utilizado: ChromaDB
+
+- A LLM usada foi é Ollama com os modelos phi3 (3B), llama2 (7B) e llama3 (8B).
+  - com o modelo phi3 os resultados obtidos foram bastantes insatisfatórios,
+  - llama2 e llama3 tiver resultados melhores e semelhantes.
 
 ### Configuração da máquina utilizada
 #### Máquina 1:
@@ -26,14 +31,19 @@ A LLM usada foi é Ollama com os modelos phi3 (3B), llama2 (7B) e llama3 (8B).
 - Sistema Linux Ubuntu 24.04
 
 ## Resultados obtidos
-- Quando usado arquivos *.eml* sem processar os anexos e poucos arquivos o processamento é "rápido" e as respostas retornadas são mais precisas.
-- Quando aumenta a quantidade de arquivos o processo é mais longo e as respostas começam a fazer confusão, que aumenta na medida que aumentar adição de novos arquivos.
+- Quando usado arquivos *.eml* sem processar os anexos e **poucos arquivos** o processamento é "rápido" e as respostas retornadas são mais precisas.
+- Quando aumenta a quantidade de arquivos o processo é mais longo e as respostas começam a fazer confusão, que aumenta na medida que adiciona novos arquivos.
 - Ao selecionar arquivos de anexos separados como *.pdf* a resposta é mais precisa, mas acontece o mesmo de fazer confusão quando se adiciona mais arquivos para processar.
 
 ## Limitações encontradas:
-- Com o aumento da quantidade de arquivos, principlamente com anexos, aumenta bastante o tempo de processamento dos dados. Também foi observado que quanto maior os arquivos *.eml* e arquivos *.pdf* grandes, o processo se torna bastante prolongado.
-- Com determinado tipo de arquivos retornaram erros. Arquivos compactados, de imagens e outros formatos não suportados. Precisa fazer um tratamento para criar uma exclusão desses formatos e provalvemente criar função para lidar arquivos compactados para extrair os arquivos que possa interessar o usuário.
+- Com o aumento da quantidade de arquivos, principlamente com anexos, aumenta bastante o tempo de processamento dos dados. Também foi observado que quanto maior os arquivos *.eml* e arquivos *.pdf* grandes, o processo se torna bastante prolongado com resultados confuso.
+- Com determinado tipo de arquivos retornaram erros. Arquivos compactados, de imagens, alguns arquivos em pdf (onde o conteúdo é imagem) e outros formatos não suportados. Precisa fazer um tratamento para criar uma exclusão desses formatos e provalvemente criar função para lidar arquivos compactados para extrair os arquivos que possa interessar o usuário.
 - Foi observado momentos de "alucinações" ou de "respostas misturadas" com o aumento de novos arquivos na base de dados ja existentes. Também foi observado quando analisado arquivos .eml com conteúdo bem parecidos.
+
+## Trabalhos futuro:
+- implementar uma versão utilizando o LlamaIndex com modelos llama3 ou outro com mais paramentos.
+- Escolher de um outro banco de dados vetoriais.
+- Escolher outra forma de baixar e organizar os arquivos do emails baixados.
 
 ## Execução do código:
 ### Primeiro Passo (instalar as libs)
