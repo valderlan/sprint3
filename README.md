@@ -8,10 +8,9 @@
 Estudo focado em executar localmente uma LLM para conseguir obter informações de arquivos de emails baixado em uma pasta local.
 
 ### Tecnologias utilizadas:
+- Python 3.12.3
 - LangChain
-
 - Banco de dados utilizado: ChromaDB
-
 - A LLM usada foi é Ollama com os modelos phi3 (3B), llama2 (7B) e llama3 (8B).
   - com o modelo phi3 os resultados obtidos foram bastantes insatisfatórios,
   - llama2 e llama3 tiver resultados melhores e semelhantes.
