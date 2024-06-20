@@ -73,5 +73,8 @@ Nessa etapa é um processo mais demorado a depender da configuração do computa
 
 ![image](https://github.com/valderlan/sprint3/assets/71195621/33f26ee3-d44c-424a-909a-ae0112775e01)
 
+![image](https://github.com/valderlan/sprint3/assets/71195621/c99d677d-2f27-461b-afa6-4175db9942d7)
+
+
 
 
