@@ -23,7 +23,7 @@ Estudo focado em executar localmente uma LLM para conseguir obter informações 
 - RTX 4060 8GB
 - M.2 de 1TB 4gen
 - Sistema Windows 11
-#### Máquina 2
+#### Máquina 2:
 - Core i7 13700
 - Mémoria ram 16 GB DDR5
 - Intel Graphics (a llm não utiliza)
