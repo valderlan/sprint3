@@ -71,3 +71,7 @@ streamlit run query.py
 Estão irá abrir uma janela no navegador padrão onde o usuário poderá fazer as perguntas e obter as respostas. O arquivo *query.py* fará a chamada no *base_langchain.py* onde tem a logica do processo de tratar arquivos salvos em uma pasta.
 Nessa etapa é um processo mais demorado a depender da configuração do computador.
 
+![image](https://github.com/valderlan/sprint3/assets/71195621/33f26ee3-d44c-424a-909a-ae0112775e01)
+
+
+
