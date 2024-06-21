@@ -31,8 +31,8 @@ Estudo focado em executar localmente uma LLM para conseguir obter informações 
 - Sistema Linux Ubuntu 24.04
 
 ## Resultados obtidos
-- Quando comsultando arquivos *.eml* sem processar os anexos o processamento é mais rápido e as respostas retornadas são mais precisas.
-- Ao selecionar poucos arquivos de anexos de modo separados (extraído) dos arquivos *.eml*, como por exemplo, *.pdf* a resposta é mais precisar.
+- Quando consultando arquivos *.eml* sem processar os anexos, o processamento é rápido e as respostas retornadas são mais precisas.
+- Ao selecionar arquivos de anexos de modo separados (extraído) dos arquivos *.eml*, como por exemplo, *.pdf* a resposta é mais precisar.
 
 ## Limitações encontradas:
 - Com o aumento da quantidade de arquivos, principlamente com anexos, aumenta bastante o tempo de processamento dos dados locais.
